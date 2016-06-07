@@ -1,0 +1,8 @@
+{
+  "description": "a reddit or hacker news clone",
+  "repository": "https://github/walshification/flapper-news",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.7.9"
+  }
+}

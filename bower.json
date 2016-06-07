@@ -1,0 +1,27 @@
+{
+  "name": "flapper-news",
+  "authors": [
+    "Christopher Walsh <walshification@gmail.com>"
+  ],
+  "description": "a reddit or hacker news clone",
+  "main": "",
+  "keywords": [
+    "flapper",
+    "news"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.6"
+  }
+}
