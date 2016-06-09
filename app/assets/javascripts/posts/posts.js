@@ -12,6 +12,12 @@ angular.module('flapperNews')
       });
     };
 
+    o.get = function(id) {
+      return $http.get('/posts/' + id + '.json').then(function(resp){
+        return resp.data;
+      });
+    };
+
     o.create = function(post) {
       return $http.post('/posts.json', post).success(function(data){
         o.posts.push(data);

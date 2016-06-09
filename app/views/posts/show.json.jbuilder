@@ -1,12 +1,7 @@
-@post do
-  json.id @post.id
-  json.link @post.link
-  json.title @post.title
-  json.upvotes @post.upvotes
+json.(@post, :id, :link, :title, :upvotes)
 
-  json.comments @post.comments do |comment|
-    json.id comment.id
-    json.post_id @post.id
-    json.body comment.body
-  end
+json.comments @post.comments do |comment|
+  json.id comment.id
+  json.post_id comment.post_id
+  json.body comment.body
 end
