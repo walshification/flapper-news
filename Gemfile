@@ -38,3 +38,4 @@ end
 
 gem 'angular-rails-templates'
 gem 'quiet_assets'
+gem 'angular_rails_csrf'
