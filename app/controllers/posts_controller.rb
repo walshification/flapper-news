@@ -5,6 +5,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.create(post_params)
+    render json: @post
   end
 
   def show
@@ -13,6 +14,7 @@ class PostsController < ApplicationController
 
   def upvote
     @post = Post.find(params[:id]).increment!(:upvotes)
+    render json: @post
   end
 
   private
